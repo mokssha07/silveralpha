@@ -1,0 +1,12 @@
+import os
+from pathlib import Path
+
+if Path("prediction/ENABLE_PREDICTION.flag").exists():
+    print("\n=== Running Prediction Layer (Optional) ===")
+    os.system("python prediction/build_features.py")
+    os.system("python prediction/label_outcomes.py")
+    os.system("python prediction/update_memory.py")
+    os.system("python prediction/train_predictor.py")
+    os.system("python prediction/show_prediction.py")
+else:
+    print("\nPrediction disabled. Narrative engine only.")

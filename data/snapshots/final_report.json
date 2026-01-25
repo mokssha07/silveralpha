@@ -1,0 +1,90 @@
+{
+  "market": {
+    "market_pressure_index": -0.072,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "final_pressure": -0.06,
+        "direction": "neutral"
+      },
+      {
+        "cluster_id": 1,
+        "final_pressure": 0.03,
+        "direction": "up"
+      },
+      {
+        "cluster_id": 2,
+        "final_pressure": -0.22,
+        "direction": "up"
+      },
+      {
+        "cluster_id": 3,
+        "final_pressure": -0.27,
+        "direction": "neutral"
+      },
+      {
+        "cluster_id": 4,
+        "final_pressure": 0.16,
+        "direction": "up"
+      }
+    ]
+  },
+  "confidence": {
+    "confidence": 0.72,
+    "source": "historical_validation"
+  },
+  "regime": {
+    "regime": "building"
+  },
+  "signal_trust": {
+    "signal_trust": 0.65
+  },
+  "multi_horizon": {
+    "short_term": -0.1,
+    "medium_term": 0.07,
+    "long_term": -0.03
+  },
+  "narratives": [
+    {
+      "cluster_id": 0,
+      "narrative": "Federal Reserve Rate Policy",
+      "size": 15,
+      "stability": 0.75,
+      "pressure": -0.11,
+      "direction": "down"
+    },
+    {
+      "cluster_id": 1,
+      "narrative": "Industrial Silver Demand",
+      "size": 8,
+      "stability": 0.79,
+      "pressure": 0.24,
+      "direction": "down"
+    },
+    {
+      "cluster_id": 2,
+      "narrative": "Dollar Strength Impact",
+      "size": 15,
+      "stability": 0.88,
+      "pressure": -0.05,
+      "direction": "up"
+    },
+    {
+      "cluster_id": 3,
+      "narrative": "Mining Supply Constraints",
+      "size": 16,
+      "stability": 0.74,
+      "pressure": -0.17,
+      "direction": "neutral"
+    },
+    {
+      "cluster_id": 4,
+      "narrative": "Investment Flows",
+      "size": 10,
+      "stability": 0.62,
+      "pressure": -0.07,
+      "direction": "up"
+    }
+  ],
+  "timestamp": "2026-01-25T03:38:03.331567"
+}

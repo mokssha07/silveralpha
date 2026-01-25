@@ -1,0 +1,42 @@
+[
+  {
+    "cluster_id": 0,
+    "narrative": "Federal Reserve Rate Policy",
+    "size": 16,
+    "stability": 0.8,
+    "pressure": -0.1,
+    "direction": "neutral"
+  },
+  {
+    "cluster_id": 1,
+    "narrative": "Industrial Silver Demand",
+    "size": 16,
+    "stability": 0.69,
+    "pressure": -0.02,
+    "direction": "down"
+  },
+  {
+    "cluster_id": 2,
+    "narrative": "Dollar Strength Impact",
+    "size": 12,
+    "stability": 0.84,
+    "pressure": -0.2,
+    "direction": "neutral"
+  },
+  {
+    "cluster_id": 3,
+    "narrative": "Mining Supply Constraints",
+    "size": 9,
+    "stability": 0.65,
+    "pressure": 0.27,
+    "direction": "neutral"
+  },
+  {
+    "cluster_id": 4,
+    "narrative": "Investment Flows",
+    "size": 15,
+    "stability": 0.82,
+    "pressure": -0.08,
+    "direction": "neutral"
+  }
+]

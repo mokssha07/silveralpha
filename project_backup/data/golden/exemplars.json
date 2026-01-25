@@ -1,0 +1,34 @@
+[
+  {
+    "cluster_id": 1,
+    "name": null,
+    "exemplars": [
+      {
+        "source": "Mining.com",
+        "text": "usa rare earth to build plant in france with gov't backing usar's proposed facility has a capacity of 3,750 metric tons per annum and will be co-located at the caremag oxide facility.",
+        "published": "Tue, 20 Jan 2026 17:05:17 +0000"
+      },
+      {
+        "source": "Mining.com",
+        "text": "american rare earths, wyoming u team up on byproduct research at halleck creek halleck creek has been selected for a seed translational acceleration of research (star) project award.",
+        "published": "Thu, 22 Jan 2026 23:45:07 +0000"
+      }
+    ]
+  },
+  {
+    "cluster_id": 0,
+    "name": null,
+    "exemplars": [
+      {
+        "source": "Mining.com",
+        "text": "gold price surpasses $4,900 as record rally carries on spot gold rose nearly 2% to set a fresh all-time high of $4,923.63 per ounce.",
+        "published": "Thu, 22 Jan 2026 19:59:46 +0000"
+      },
+      {
+        "source": "Mining.com",
+        "text": "liberty gold's idaho project gets fast-41 nod black pine is one of the few large-scale oxide gold deposits in the us.",
+        "published": "Wed, 21 Jan 2026 16:19:12 +0000"
+      }
+    ]
+  }
+]

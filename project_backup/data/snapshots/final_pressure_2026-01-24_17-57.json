@@ -1,0 +1,27 @@
+[
+  {
+    "cluster_id": 3,
+    "final_pressure": 0.1,
+    "direction": "up"
+  },
+  {
+    "cluster_id": 4,
+    "final_pressure": -0.1,
+    "direction": "down"
+  },
+  {
+    "cluster_id": 0,
+    "final_pressure": -0.1,
+    "direction": "down"
+  },
+  {
+    "cluster_id": 2,
+    "final_pressure": 0.0,
+    "direction": "neutral"
+  },
+  {
+    "cluster_id": 1,
+    "final_pressure": -0.1,
+    "direction": "down"
+  }
+]

@@ -1,0 +1,20 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# Django
+db.sqlite3
+
+# ML artifacts
+pressure_memory.json
+training.log
+
+# Node / Frontend
+frontend/node_modules/
+frontend/.next/
+
+# OS
+.DS_Store

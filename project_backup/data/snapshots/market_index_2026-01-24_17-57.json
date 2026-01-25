@@ -1,0 +1,30 @@
+{
+  "market_pressure_index": -0.5,
+  "clusters": [
+    {
+      "cluster_id": 3,
+      "pressure": 0.1,
+      "direction": "up"
+    },
+    {
+      "cluster_id": 4,
+      "pressure": -0.1,
+      "direction": "down"
+    },
+    {
+      "cluster_id": 0,
+      "pressure": -0.1,
+      "direction": "down"
+    },
+    {
+      "cluster_id": 2,
+      "pressure": 0.0,
+      "direction": "neutral"
+    },
+    {
+      "cluster_id": 1,
+      "pressure": -0.1,
+      "direction": "down"
+    }
+  ]
+}

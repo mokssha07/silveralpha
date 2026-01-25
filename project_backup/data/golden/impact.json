@@ -1,0 +1,16 @@
+[
+  {
+    "cluster_id": 1,
+    "size": 8,
+    "stability": 1.7619999647140503,
+    "impact_score": 0.09,
+    "direction": "Bullish"
+  },
+  {
+    "cluster_id": 0,
+    "size": 10,
+    "stability": 2.121999979019165,
+    "impact_score": 0.085,
+    "direction": "Bullish"
+  }
+]

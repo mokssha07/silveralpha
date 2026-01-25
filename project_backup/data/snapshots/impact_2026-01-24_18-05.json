@@ -1,0 +1,37 @@
+[
+  {
+    "cluster_id": 3,
+    "size": 7,
+    "stability": 1.9249999523162842,
+    "impact_score": 0.133,
+    "direction": "Bullish"
+  },
+  {
+    "cluster_id": 4,
+    "size": 12,
+    "stability": 1.9880000352859497,
+    "impact_score": 0.079,
+    "direction": "Bullish"
+  },
+  {
+    "cluster_id": 0,
+    "size": 3,
+    "stability": 2.694999933242798,
+    "impact_score": 0.238,
+    "direction": "Bullish"
+  },
+  {
+    "cluster_id": 2,
+    "size": 14,
+    "stability": 2.1089999675750732,
+    "impact_score": 0.21,
+    "direction": "Bullish"
+  },
+  {
+    "cluster_id": 1,
+    "size": 3,
+    "stability": 3.3949999809265137,
+    "impact_score": 0.166,
+    "direction": "Bullish"
+  }
+]

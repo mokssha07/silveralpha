@@ -1,0 +1,12 @@
+[
+  {
+    "cluster_id": 1,
+    "weighted_pressure": 0.0,
+    "direction": "Bullish"
+  },
+  {
+    "cluster_id": 0,
+    "weighted_pressure": 0.0,
+    "direction": "Bullish"
+  }
+]
