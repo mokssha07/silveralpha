@@ -1,169 +1,247 @@
-# Silver Alpha - Narrative-Driven Market Intelligence
+Silver Alpha — Narrative Intelligence for Market Analysis
+"The market moves on narratives. We made them measurable."
 
-## Overview
-
-Silver Alpha is an unsupervised machine learning system that detects emerging market regimes through real-time narrative analysis from global news sources.
-
-### Innovation
-
-Unlike traditional price-prediction models, Silver Alpha:
-- **Narrative-First Architecture**: Analyzes news semantics before price movements
-- **Unsupervised Learning**: No labeled training data required
-- **Multi-Horizon Analysis**: Short/Medium/Long-term signal decomposition
-- **Regime Detection**: Identifies market states (Quiet/Building/Momentum/Trending)
+An AI system that reads the news so you don't have to.
 
 ---
 
-## Technical Architecture
+Hackathon Details
 
-### Pipeline Flow
+- Event: Echelon 2.0cd
+- Team Name: Team Phoenix
+- Repository: Echelon2.0_TeamPhoenix
+- Built: January 2026
+
+---
+
+What This Product Does
+
+Most trading systems react to price movements — by then, the opportunity is gone.
+
+Silver Alpha works one layer earlier.
+
+It continuously reads hundreds of financial news articles, detects emerging narratives, tracks how fast they grow, and converts narrative momentum into actionable market signals — often days before price reacts.
+
+Think of it as a 24×7 research analyst that:
+- Reads everything
+- Ignores noise
+- Surfaces only what actually matters
+
+---
+
+How It Works (Plain English)
+
+End-to-End Pipeline
+
+1. Collect News
+   Articles from Reuters, Financial Times, Mining.com, Yahoo Finance, and historical archives
+
+2. Clean & Normalize
+   Removes boilerplate, ads, duplicates, formatting noise
+
+3. Semantic Encoding
+   Each article → numerical vector using sentence embeddings
+
+4. Unsupervised Clustering
+   Similar stories grouped into narratives (no labels, no bias)
+
+5. Narrative Dynamics
+   - Velocity: how fast mentions grow
+   - Stability: persistence vs volatility
+   - Source Diversity: independent confirmation
+
+6. Pressure Calculation
+   Multiple aligned narratives = compounding pressure
+
+7. Regime Classification
+   - Quiet
+   - Building
+   - Momentum
+   - Trending
+
+8. Signal Generation
+   - WATCH → neutral
+   - BUY → bullish pressure
+   - SELL → bearish pressure
+
+No black magic. Just applied ML on what people are actually talking about.
+
+---
+
+Visual Intelligence (Frontend)
+
+- Interactive 3D globe
+- Green nodes → bullish narratives
+- Red nodes → bearish narratives
+- Click any node to see:
+  - Narrative breakdown
+  - Trust level
+  - Indicators
+  - Time-series evolution
+  - Recommended action
+
+Built for exploration, not spreadsheets.
+
+---
+
+Technical Stack
+
+Machine Learning
+- SentenceTransformers — semantic understanding
+- HDBSCAN — unsupervised clustering
+- Custom algorithms for:
+  - Narrative velocity
+  - Pressure accumulation
+  - Regime detection
+
+Backend
+- Python
+- Django REST Framework
+- Stateless JSON APIs
+
+Frontend
+- React (Next.js)
+- Three.js / WebGL
+- Framer Motion for animations
+
+Data
+- Live RSS feeds
+- Internet Archive (Wayback Machine)
+- Stored snapshots for reproducibility
+
+---
+
+Repository Structure (Important)
+
 ```
-News Sources (RSS/Wayback)
-    ↓
-Text Cleaning & Normalization
-    ↓
-Semantic Embeddings (SentenceTransformer)
-    ↓
-Unsupervised Clustering (HDBSCAN)
-    ↓
-Narrative Impact Analysis
-    ↓
-Velocity Computation (temporal delta)
-    ↓
-Pressure Accumulation
-    ↓
-Market Index Aggregation
-    ↓
-Regime Classification
-    ↓
-Multi-Horizon Prediction
-    ↓
-Action State (BUY/SELL/WATCH)
+silveralpha/
+│
+├── silver_backend/        # Django API
+├── frontend/              # React + Three.js UI
+├── analysis/              # Core ML logic
+├── clustering/            # Narrative clustering
+├── ingestion/             # News ingestion
+├── prediction/            # Signal logic
+├── preprocessing/         # Cleaning pipeline
+├── example_data/          # Example input/output data
+├── requirements.txt       # Python dependencies
+└── README.md
 ```
 
-### Core Technologies
+---
 
-- **ML Framework**: scikit-learn, HDBSCAN
-- **NLP**: SentenceTransformers (all-MiniLM-L6-v2)
-- **Backend**: Django REST Framework
-- **Frontend**: React + Three.js + WebGL
-- **Data Sources**: Internet Archive Wayback Machine, RSS feeds
+Example Data (Included)
+
+To make evaluation easy, we include example data:
+
+```
+example_data/
+├── sample_articles.json
+├── sample_clusters.json
+├── sample_output.json
+```
+
+These files demonstrate:
+- Input news articles
+- Generated narratives
+- Final signals & indicators
+
+No external setup required to understand the flow.
 
 ---
 
-## Key Features
+Setup Instructions
 
-### 1. Narrative Clustering
-- Automatic topic detection from raw news
-- Cluster stability tracking
-- Source diversity analysis
+1. Install Backend Dependencies
 
-### 2. Velocity & Pressure Metrics
-- **Velocity**: Rate of narrative size change
-- **Pressure**: Accumulated momentum with decay
-- **Direction**: Bullish/Bearish/Neutral classification
-
-### 3. Regime Classification
-Adaptive thresholds detect:
-- **Quiet**: Low market pressure (< 0.05)
-- **Building**: Emerging pressure (0.05 - 0.15)
-- **Momentum**: Active movement (0.15 - 0.3)
-- **Trending**: Strong directional bias (> 0.3)
-
-### 4. Multi-Horizon Signals
-- **Short-term**: 1-3 day outlook
-- **Medium-term**: 1-2 week outlook  
-- **Long-term**: 2-4 week outlook
-
----
-
-## Installation & Setup
-
-### Prerequisites
 ```bash
-Python 3.10+
 pip install -r requirements.txt
 ```
 
-### Quick Start
+2. Run the ML Pipeline
 
-1. **Run ML Pipeline**
 ```bash
 python run_pipeline.py
 ```
 
-2. **Start Backend API**
+This:
+- Ingests news
+- Generates embeddings
+- Clusters narratives
+- Produces signals
+
+3. Start Backend API
+
 ```bash
 cd silver_backend
 python manage.py runserver
 ```
 
-3. **Start Frontend** (separate terminal)
+API runs at:
+```
+http://127.0.0.1:8000/api/
+```
+
+4. Start Frontend
+
 ```bash
 cd frontend
-npm start
+npm install
+npm run dev
+```
+
+UI available at:
+```
+http://localhost:3000
 ```
 
 ---
 
-## API Endpoints
+API Endpoints (JSON)
 
-Base URL: `http://localhost:8000/api/`
+Health Check
+```
+GET /api/status/
+```
 
-- `GET /status/` - Health check
-- `GET /globe/nodes/` - Intelligence nodes for globe visualization
-- `GET /node/{id}/` - Detailed narrative analysis
-- `GET /dashboard/summary/` - Market summary metrics
-- `GET /dashboard/chart/` - Sentiment distribution
+Globe Nodes
+```
+GET /api/globe/nodes/
+```
 
----
+Narrative Detail
+```
+GET /api/node/{id}/
+```
 
-## Model Performance
-
-### Training Data
-- 6-month historical window
-- ~45 snapshots (every 4th day)
-- 30-60 articles per snapshot from Wayback Machine
-
-### Output Metrics
-- **Market Pressure Index**: -1.0 (bearish) to +1.0 (bullish)
-- **Signal Trust**: 0.4 (quiet) to 0.85 (momentum)
-- **Prediction Confidence**: Regime-adjusted probability
+Dashboard Summary
+```
+GET /api/dashboard/summary/
+```
 
 ---
 
-## Real-World Impact
+Real-World Impact
 
-### Use Cases
-1. **Institutional Traders**: Early regime detection for position sizing
-2. **Risk Management**: Narrative conflict identification
-3. **Research Analysts**: Automated topic tracking across sources
-4. **Retail Investors**: Simplified market sentiment dashboard
+Who this helps
+- Traders → early signals
+- Portfolio managers → narrative awareness
+- Research teams → automated synthesis
+- Anyone drowning in market news
 
-### Advantages Over Traditional Models
-- No lag from price-only indicators
-- Detects narrative shifts before price moves
-- Source diversity prevents single-point manipulation
-- Unsupervised = adapts to new market conditions
-
----
-
-## Future Enhancements
-
-- Real-time streaming data integration
-- Cross-asset narrative correlation (Gold, Oil, USD)
-- Sentiment intensity scoring (BERT fine-tuning)
-- Historical backtesting with price validation
-- Mobile app deployment
+Why it's different
+- Not price-reactive
+- Not keyword-based sentiment
+- Fully unsupervised
+- Narrative-first intelligence
 
 ---
 
-## Team
+What's Next
+- Backtesting vs price action
+- Multi-asset expansion
+- Real-time streaming (WebSockets)
+- Deeper NLP intensity scoring
 
-Silver Alpha Partners | 2026
 
----
 
-## License
-
-Proprietary - All Rights Reserved
