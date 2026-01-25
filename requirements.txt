@@ -1,0 +1,11 @@
+Django>=4.2
+djangorestframework
+numpy
+pandas
+scikit-learn
+scipy
+sentence-transformers
+torch
+requests
+tqdm
+python-dateutil
