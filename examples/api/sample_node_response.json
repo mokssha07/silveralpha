@@ -1,0 +1,22 @@
+{
+  "status": "success",
+  "data": {
+    "id": 1,
+    "narrative": "Industrial Silver Demand",
+    "narrative_score": 4.0,
+    "trust_level": "Medium",
+    "action_state": "WATCH",
+    "sentiment": "bullish",
+    "metrics": {
+      "pressure": 0.03,
+      "direction": "up",
+      "cluster_size": 8
+    },
+    "indicators": {
+      "size": 40,
+      "velocity": 3,
+      "stability": 79,
+      "sources": 7
+    }
+  }
+}
