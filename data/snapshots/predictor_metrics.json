@@ -1,0 +1,15 @@
+{
+  "num_examples": 0,
+  "prediction_source": "deterministic_fallback",
+  "reason": "need at least 8 labeled examples across both classes",
+  "adjusted_latest_proba": 0.642,
+  "features": [
+    "market_pressure_index",
+    "num_narratives",
+    "max_cluster_pressure",
+    "mean_cluster_pressure",
+    "bullish_share",
+    "bearish_share",
+    "mean_confidence"
+  ]
+}

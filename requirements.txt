@@ -1,5 +1,6 @@
 Django>=4.2
 djangorestframework
+django-cors-headers
 numpy
 pandas
 scikit-learn
@@ -9,3 +10,10 @@ torch
 requests
 tqdm
 python-dateutil
+feedparser
+ftfy
+clean-text
+hdbscan
+vaderSentiment
+praw
+transformers

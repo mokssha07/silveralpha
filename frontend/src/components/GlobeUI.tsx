@@ -2,6 +2,7 @@
 
 import React, { useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import type { SelectedGlobeData } from './Experience'
 
 interface IndicatorProps {
     label: string
@@ -27,12 +28,15 @@ const IndicatorBar = ({ label, value, color }: IndicatorProps) => (
     </div>
 )
 
-export default function GlobeUI({ selectedData, onClose }: { selectedData: any, onClose: () => void }) {
-    if (!selectedData) return null
+function seededRandom(seed: number) {
+    const x = Math.sin(seed) * 10000
+    return x - Math.floor(x)
+}
 
-    const sentiment = selectedData.sentiment ?? 0
+export default function GlobeUI({ selectedData, onClose }: { selectedData: SelectedGlobeData | null, onClose: () => void }) {
+    const sentiment = selectedData?.sentiment ?? 0
     const isBullish = sentiment === 1
-    const themeColor = isBullish ? '#21ED8D' : '#ff3333'
+    const themeColor = isBullish ? '#21ED8D' : sentiment === -1 ? '#ff3333' : '#b8c1cc'
 
     const indicators = {
         size: selectedData?.indicators?.size ?? 0,
@@ -44,6 +48,7 @@ export default function GlobeUI({ selectedData, onClose }: { selectedData: any, 
     const sourcesList: string[] = Array.isArray(selectedData?.sourcesList)
         ? selectedData.sourcesList
         : []
+    const selectedId = selectedData?.id ?? 0
 
     const graphData = useMemo(() => {
         const points = 100
@@ -52,7 +57,7 @@ export default function GlobeUI({ selectedData, onClose }: { selectedData: any, 
 
         for (let i = 0; i < points; i++) {
             const open = lastClose
-            const movement = (Math.random() - 0.5) * 6
+            const movement = (seededRandom(i + selectedId * 101) - 0.5) * 6
             const close = Math.max(10, Math.min(90, open + movement))
 
             data.push({
@@ -63,7 +68,9 @@ export default function GlobeUI({ selectedData, onClose }: { selectedData: any, 
             lastClose = close
         }
         return data
-    }, [selectedData])
+    }, [selectedId])
+
+    if (!selectedData) return null
 
     return (
         <div className="absolute inset-0 pointer-events-none z-20 font-mono">
@@ -94,7 +101,7 @@ export default function GlobeUI({ selectedData, onClose }: { selectedData: any, 
 
                     <div className="flex items-center gap-6 mb-8">
                         <div className="text-5xl" style={{ color: themeColor }}>
-                            {isBullish ? '▲' : '▼'}
+                            {isBullish ? '▲' : sentiment === -1 ? '▼' : '■'}
                         </div>
                         <div className="text-6xl font-black">
                             {selectedData.change ?? '0.0'}%

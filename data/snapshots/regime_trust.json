@@ -1,4 +1,4 @@
 {
-  "signal_trust": 0.4,
-  "regime": "quiet"
+  "signal_trust": 0.65,
+  "regime": "trending"
 }

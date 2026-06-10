@@ -5,6 +5,11 @@ import { useFrame } from '@react-three/fiber'
 import { Points, PointMaterial } from '@react-three/drei'
 import * as THREE from 'three'
 
+function seededRandom(seed: number) {
+    const x = Math.sin(seed) * 10000
+    return x - Math.floor(x)
+}
+
 export default function EnvironmentParticles() {
     const pointsRef = useRef<THREE.Points>(null)
 
@@ -13,9 +18,9 @@ export default function EnvironmentParticles() {
         const count = 1500
         const positions = new Float32Array(count * 3)
         for (let i = 0; i < count; i++) {
-            positions[i * 3] = (Math.random() - 0.5) * 50
-            positions[i * 3 + 1] = (Math.random() - 0.5) * 50
-            positions[i * 3 + 2] = (Math.random() - 0.5) * 50
+            positions[i * 3] = (seededRandom(i * 3 + 1) - 0.5) * 50
+            positions[i * 3 + 1] = (seededRandom(i * 3 + 2) - 0.5) * 50
+            positions[i * 3 + 2] = (seededRandom(i * 3 + 3) - 0.5) * 50
         }
         return positions
     }, [])

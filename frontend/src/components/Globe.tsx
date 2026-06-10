@@ -3,16 +3,23 @@ import { useRef, useEffect, useState, useMemo } from 'react'
 import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 import { useTexture } from '@react-three/drei'
+import type { GlobeNode } from './Experience'
 
-const API_URL = 'http://127.0.0.1:8000/api/globe/nodes/'
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? 'http://127.0.0.1:8000/api'
+const API_URL = `${API_BASE}/globe/nodes/`
 const NEON_GREEN = '#21ED8D'
 
-const NewsBeam = ({ item, onSelect }: { item: any; onSelect: (data: any) => void }) => {
+function seededRandom(seed: number) {
+    const x = Math.sin(seed) * 10000
+    return x - Math.floor(x)
+}
+
+const NewsBeam = ({ item, onSelect }: { item: GlobeNode; onSelect: (data: GlobeNode) => void }) => {
     const beamRef = useRef<THREE.Mesh>(null)
     const circleRef = useRef<THREE.Mesh>(null)
 
     const isPositive = item.direction === 'up'
-    const color = isPositive ? 0x00ff88 : 0xff3333
+    const color = isPositive ? 0x00ff88 : item.direction === 'down' ? 0xff3333 : 0xb8c1cc
     const height = 0.22
 
     // ✅ CORRECT LAT/LON → XYZ
@@ -78,9 +85,9 @@ const NewsBeam = ({ item, onSelect }: { item: any; onSelect: (data: any) => void
 
 export default function Globe({
     onSelect,
-    isFocused, // intentionally unused
+    isFocused,
 }: {
-    onSelect: (data: any) => void
+    onSelect: (data: GlobeNode) => void
     isFocused: boolean
 }) {
     const worldRef = useRef<THREE.Group>(null)
@@ -88,7 +95,7 @@ export default function Globe({
         'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/earth_atmos_2048.jpg'
     )
 
-    const [newsData, setNewsData] = useState<any[]>([])
+    const [newsData, setNewsData] = useState<GlobeNode[]>([])
     const [locked, setLocked] = useState(false)
 
     const targetRotation = useRef({ x: 0, y: 0 })
@@ -99,9 +106,9 @@ export default function Globe({
         const positions = new Float32Array(count * 3)
 
         for (let i = 0; i < count; i++) {
-            const radius = 15 + Math.random() * 25
-            const theta = Math.random() * Math.PI * 2
-            const phi = Math.acos(2 * Math.random() - 1)
+            const radius = 15 + seededRandom(i * 3 + 1) * 25
+            const theta = seededRandom(i * 3 + 2) * Math.PI * 2
+            const phi = Math.acos(2 * seededRandom(i * 3 + 3) - 1)
 
             positions[i * 3] = radius * Math.sin(phi) * Math.cos(theta)
             positions[i * 3 + 1] = radius * Math.sin(phi) * Math.sin(theta)
@@ -114,13 +121,13 @@ export default function Globe({
     useEffect(() => {
         fetch(API_URL)
             .then(res => res.json())
-            .then(json => {
-                if (json.status === 'success') setNewsData(json.data)
+            .then((json: { status: string; data?: GlobeNode[] }) => {
+                if (json.status === 'success') setNewsData(json.data ?? [])
             })
             .catch(console.error)
     }, [])
 
-    const handleSelect = (item: any) => {
+    const handleSelect = (item: GlobeNode) => {
         const latRad = THREE.MathUtils.degToRad(item.lat)
         const lonRad = THREE.MathUtils.degToRad(item.lon)
 
@@ -134,7 +141,7 @@ export default function Globe({
     useFrame(() => {
         if (!worldRef.current) return
 
-        if (!locked) {
+        if (!locked && !isFocused) {
             worldRef.current.rotation.y += 0.001
         } else {
             worldRef.current.rotation.y = THREE.MathUtils.lerp(

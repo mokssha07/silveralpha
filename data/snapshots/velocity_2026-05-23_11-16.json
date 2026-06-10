@@ -1,0 +1,23 @@
+[
+  {
+    "cluster_id": 1,
+    "velocity": 0,
+    "size": 20,
+    "stability": 0.286,
+    "impact_score": 0.086
+  },
+  {
+    "cluster_id": 2,
+    "velocity": 0,
+    "size": 17,
+    "stability": 0.385,
+    "impact_score": -0.146
+  },
+  {
+    "cluster_id": 0,
+    "velocity": 0,
+    "size": 20,
+    "stability": 0.401,
+    "impact_score": 0.183
+  }
+]

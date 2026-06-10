@@ -11,6 +11,53 @@ import Globe from './Globe'
 import GlobeUI from './GlobeUI'
 import TypingText from './TypingText'
 
+export interface GlobeNode {
+    id: number
+    region: string
+    lat: number
+    lon: number
+    direction: 'up' | 'down' | 'neutral'
+    sentiment: 1 | -1 | 0
+    narrative: string
+    pressure: number
+    size: number
+    stability: number
+}
+
+export interface NodeDetail {
+    id: number
+    narrative: string
+    narrative_score: number
+    trust_level: string
+    action_state: 'WATCH' | 'BUY' | 'SELL'
+    sentiment: string
+    time_series: Array<{ time: number | string; value: number }>
+    indicators: {
+        size: number
+        velocity: number
+        stability: number
+        sources: number
+    }
+    metrics: {
+        pressure: number
+        direction: string
+        cluster_size: number
+    }
+    horizon: string
+    sourcesList: string[]
+}
+
+export interface SelectedGlobeData extends Omit<NodeDetail, 'sentiment'> {
+    heading: string
+    trust: string
+    action: 'WATCH' | 'BUY' | 'SELL'
+    change: number
+    direction: GlobeNode['direction']
+    sentiment: GlobeNode['sentiment']
+}
+
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? 'http://127.0.0.1:8000/api'
+
 // Camera Manager to handle smooth transitions and resets between views
 function CameraController({ view, isFocused }: { view: 'landing' | 'repository', isFocused: boolean }) {
     const { camera } = useThree()
@@ -31,49 +78,33 @@ function CameraController({ view, isFocused }: { view: 'landing' | 'repository',
 }
 
 export default function Experience() {
-    const [mounted, setMounted] = useState(false)
     const [view, setView] = useState<'landing' | 'repository'>('landing')
-    const [selectedGlobeData, setSelectedGlobeData] = useState<any>(null)
-    
-   const handleSelectGlobeNode = useCallback(async (node: any) => {
-    try {
-        const res = await fetch(
-            `http://127.0.0.1:8000/api/node/${node.id}/`
-        )
-        const json = await res.json()
+    const [selectedGlobeData, setSelectedGlobeData] = useState<SelectedGlobeData | null>(null)
 
-        if (json.status === 'success') {
-            setSelectedGlobeData({
-                ...json.data,
+    const handleSelectGlobeNode = useCallback(async (node: GlobeNode) => {
+        try {
+            const res = await fetch(`${API_BASE}/node/${node.id}/`)
+            const json = await res.json() as { status: string; data?: NodeDetail }
 
-                // UI TEXT
-                heading: json.data.narrative,
-                trust: json.data.trust_level,
-                action: json.data.action_state,
-
-                // PERCENT (used by UI)
-                change: json.data.narrative_score,
-
-                // 🔒 SINGLE SOURCE OF TRUTH FOR COLOR / DIRECTION
-                sentiment: node.sentiment,      // 1 or -1
-                direction: node.direction,      // "up" or "down"
-
-                // ✅ FIX FOR MISSING UI FIELDS
-                horizon: json.data.horizon,
-                sourcesList: json.data.sourcesList,
-            })
+            if (json.status === 'success' && json.data) {
+                setSelectedGlobeData({
+                    ...json.data,
+                    heading: json.data.narrative,
+                    trust: json.data.trust_level,
+                    action: json.data.action_state,
+                    change: json.data.narrative_score,
+                    sentiment: node.sentiment,
+                    direction: node.direction,
+                    horizon: json.data.horizon,
+                    sourcesList: json.data.sourcesList,
+                })
+            }
+        } catch (err) {
+            console.error('Failed to fetch node detail:', err)
         }
-    } catch (err) {
-        console.error('Failed to fetch node detail:', err)
-    }
-}, [])
-
-    // 🔑 KEY TO FORCE COIN RESET (ONLY FIX)
-    const [deckKey, setDeckKey] = useState(0)
-
-    useEffect(() => {
-        setMounted(true)
     }, [])
+
+    const [deckKey, setDeckKey] = useState(0)
 
     const handleEnterRepository = useCallback(() => {
         window.scrollTo({ top: 0, behavior: 'instant' })
@@ -86,12 +117,6 @@ export default function Experience() {
         setView('landing')
         setDeckKey(k => k + 1)
     }, [])
-
-    if (!mounted) return (
-        <div className="h-screen w-full bg-black flex items-center justify-center">
-            <span className="text-zinc-800 tracking-[1em] text-xs uppercase animate-pulse">Initializing Mint</span>
-        </div>
-    )
 
     return (
         <main className="bg-black text-white w-full min-h-screen selection:bg-zinc-500/30">
@@ -123,7 +148,7 @@ export default function Experience() {
                         {view === 'landing' ? (
                             <group key="landing-scene">
                                 <EnvironmentParticles />
-                                <Coin key={deckKey} /> {/* ✅ FIX APPLIED HERE */}
+                                <Coin key={deckKey} />
                                 <Environment preset="studio" resolution={2048} />
                                 <spotLight position={[10, 20, 10]} intensity={50} angle={0.12} penumbra={1} castShadow />
                                 <spotLight position={[-15, 10, 5]} intensity={30} color="#ffffff" angle={0.2} />
@@ -205,7 +230,7 @@ export default function Experience() {
                             >
                                 Discover
                             </button>
-                            <div className="mt-20 text-zinc-800 text-[10px] tracking-[0.5em] uppercase">©️ 2026 SILVER ALPHA</div>
+                            <div className="mt-20 text-zinc-800 text-[10px] tracking-[0.5em] uppercase">2026 SILVER ALPHA</div>
                         </section>
                     </motion.div>
                 ) : (
@@ -227,7 +252,7 @@ export default function Experience() {
                                 onClick={handleBackToLanding}
                                 className="px-10 py-4 border border-neon/30 rounded-full bg-black/40 text-neon hover:bg-neon hover:text-black transition-all duration-500 font-bold tracking-[0.2em] uppercase text-xs backdrop-blur-md pointer-events-auto cursor-pointer shadow-[0_0_30px_rgba(33,237,141,0.1)]"
                             >
-                                ◄ Return to Deck
+                                Return to Deck
                             </button>
                         </div>
                     </motion.div>

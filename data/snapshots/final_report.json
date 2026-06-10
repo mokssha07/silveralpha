@@ -1,90 +1,304 @@
 {
   "market": {
-    "market_pressure_index": -0.072,
+    "market_pressure_index": -0.276,
     "clusters": [
       {
-        "cluster_id": 0,
-        "final_pressure": -0.06,
-        "direction": "neutral"
-      },
-      {
-        "cluster_id": 1,
-        "final_pressure": 0.03,
-        "direction": "up"
-      },
-      {
-        "cluster_id": 2,
-        "final_pressure": -0.22,
-        "direction": "up"
-      },
-      {
         "cluster_id": 3,
-        "final_pressure": -0.27,
-        "direction": "neutral"
+        "final_pressure": 0.14,
+        "pressure": 0.14,
+        "direction": "down"
       },
       {
         "cluster_id": 4,
-        "final_pressure": 0.16,
+        "final_pressure": -0.029,
+        "pressure": -0.029,
+        "direction": "down"
+      },
+      {
+        "cluster_id": 2,
+        "final_pressure": -0.403,
+        "pressure": -0.403,
         "direction": "up"
+      },
+      {
+        "cluster_id": 5,
+        "final_pressure": 0.01,
+        "pressure": 0.01,
+        "direction": "up"
+      },
+      {
+        "cluster_id": 0,
+        "final_pressure": 0.095,
+        "pressure": 0.095,
+        "direction": "up"
+      },
+      {
+        "cluster_id": 1,
+        "final_pressure": -0.0,
+        "pressure": -0.0,
+        "direction": "neutral"
       }
     ]
   },
   "confidence": {
-    "confidence": 0.72,
-    "source": "historical_validation"
+    "confidence": 0.5,
+    "source": "no_reddit_confirmation"
   },
   "regime": {
-    "regime": "building"
+    "regime": "trending"
   },
   "signal_trust": {
-    "signal_trust": 0.65
+    "signal_trust": 0.65,
+    "regime": "trending"
+  },
+  "conflict": {
+    "conflict": true,
+    "bullish_count": 4,
+    "bearish_count": 3
   },
   "multi_horizon": {
-    "short_term": -0.1,
+    "short_term": 0.5,
     "medium_term": 0.07,
-    "long_term": -0.03
+    "long_term": -0.2
+  },
+  "action_state": {
+    "action": "IGNORE",
+    "predicted_proba": 0.642,
+    "signal_trust": 0.65,
+    "conflict": true
+  },
+  "predictor": {
+    "num_examples": 0,
+    "prediction_source": "deterministic_fallback",
+    "reason": "need at least 8 labeled examples across both classes",
+    "adjusted_latest_proba": 0.642,
+    "features": [
+      "market_pressure_index",
+      "num_narratives",
+      "max_cluster_pressure",
+      "mean_cluster_pressure",
+      "bullish_share",
+      "bearish_share",
+      "mean_confidence"
+    ]
   },
   "narratives": [
     {
-      "cluster_id": 0,
-      "narrative": "Federal Reserve Rate Policy",
-      "size": 15,
-      "stability": 0.75,
-      "pressure": -0.11,
-      "direction": "down"
-    },
-    {
-      "cluster_id": 1,
-      "narrative": "Industrial Silver Demand",
-      "size": 8,
-      "stability": 0.79,
-      "pressure": 0.24,
-      "direction": "down"
-    },
-    {
-      "cluster_id": 2,
-      "narrative": "Dollar Strength Impact",
-      "size": 15,
-      "stability": 0.88,
-      "pressure": -0.05,
-      "direction": "up"
-    },
-    {
       "cluster_id": 3,
-      "narrative": "Mining Supply Constraints",
-      "size": 16,
-      "stability": 0.74,
-      "pressure": -0.17,
-      "direction": "neutral"
+      "narrative": "debt cycle points to stronger case for gold price: sprott sprott argues that investors are",
+      "size": 5,
+      "stability": 0.504,
+      "pressure": 0.14,
+      "direction": "up",
+      "sources": [
+        "Financial Times Commodities",
+        "Mining.com"
+      ],
+      "source_count": 2,
+      "locations": [
+        {
+          "name": "Beijing",
+          "region": "China",
+          "lat": 39.9042,
+          "lon": 116.4074,
+          "mentions": 1,
+          "evidence": [
+            "china"
+          ]
+        }
+      ],
+      "time_series": [
+        {
+          "time": 0,
+          "value": 5
+        }
+      ]
     },
     {
       "cluster_id": 4,
-      "narrative": "Investment Flows",
-      "size": 10,
-      "stability": 0.62,
-      "pressure": -0.07,
-      "direction": "up"
+      "narrative": "op-ed: lithium's threat isn't demand, but pricing battery substitutes are advancing, but t",
+      "size": 9,
+      "stability": 0.409,
+      "pressure": -0.029,
+      "direction": "down",
+      "sources": [
+        "Financial Times Commodities",
+        "Mining.com"
+      ],
+      "source_count": 2,
+      "locations": [
+        {
+          "name": "Beijing",
+          "region": "China",
+          "lat": 39.9042,
+          "lon": 116.4074,
+          "mentions": 3,
+          "evidence": [
+            "china",
+            "chinese"
+          ]
+        }
+      ],
+      "time_series": [
+        {
+          "time": 0,
+          "value": 9
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "narrative": "chinese buyers spark bidding war for us tungsten scrap: ft some dealers even reported bein",
+      "size": 12,
+      "stability": 0.448,
+      "pressure": -0.403,
+      "direction": "down",
+      "sources": [
+        "Financial Times Commodities",
+        "Mining.com"
+      ],
+      "source_count": 2,
+      "locations": [
+        {
+          "name": "Beijing",
+          "region": "China",
+          "lat": 39.9042,
+          "lon": 116.4074,
+          "mentions": 3,
+          "evidence": [
+            "china",
+            "chinese"
+          ]
+        },
+        {
+          "name": "Moscow",
+          "region": "Russia",
+          "lat": 55.7558,
+          "lon": 37.6173,
+          "mentions": 2,
+          "evidence": [
+            "russian"
+          ]
+        },
+        {
+          "name": "Brussels",
+          "region": "European Union",
+          "lat": 50.8503,
+          "lon": 4.3517,
+          "mentions": 2,
+          "evidence": [
+            "eu",
+            "eurozone"
+          ]
+        }
+      ],
+      "time_series": [
+        {
+          "time": 0,
+          "value": 12
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "narrative": "antofagasta to spend $900m extending zald\u00edvar mine to 2051 the investment will replace fre",
+      "size": 4,
+      "stability": 0.563,
+      "pressure": 0.01,
+      "direction": "up",
+      "sources": [
+        "Mining.com"
+      ],
+      "source_count": 1,
+      "locations": [
+        {
+          "name": "Mexico City",
+          "region": "Mexico",
+          "lat": 19.4326,
+          "lon": -99.1332,
+          "mentions": 1,
+          "evidence": [
+            "mexico"
+          ]
+        },
+        {
+          "name": "Lima",
+          "region": "Peru",
+          "lat": -12.0464,
+          "lon": -77.0428,
+          "mentions": 1,
+          "evidence": [
+            "peru"
+          ]
+        }
+      ],
+      "time_series": [
+        {
+          "time": 0,
+          "value": 4
+        }
+      ]
+    },
+    {
+      "cluster_id": 0,
+      "narrative": "federal reserve board announces that results from its annual bank stress test will be rele",
+      "size": 19,
+      "stability": 0.392,
+      "pressure": 0.095,
+      "direction": "up",
+      "sources": [
+        "Federal Reserve"
+      ],
+      "source_count": 1,
+      "locations": [
+        {
+          "name": "Washington, DC",
+          "region": "United States",
+          "lat": 38.9072,
+          "lon": -77.0369,
+          "mentions": 34,
+          "evidence": [
+            "federal reserve",
+            "fomc"
+          ]
+        },
+        {
+          "name": "New York",
+          "region": "United States",
+          "lat": 40.7128,
+          "lon": -74.006,
+          "mentions": 2,
+          "evidence": [
+            "new york"
+          ]
+        }
+      ],
+      "time_series": [
+        {
+          "time": 0,
+          "value": 19
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "narrative": "bp investors push for change at 'mismanaged kingdom' lack of detail on why albert manifold",
+      "size": 3,
+      "stability": 0.706,
+      "pressure": 0.0,
+      "direction": "neutral",
+      "sources": [
+        "Financial Times Commodities"
+      ],
+      "source_count": 1,
+      "locations": [],
+      "time_series": [
+        {
+          "time": 0,
+          "value": 3
+        }
+      ]
     }
   ],
-  "timestamp": "2026-01-25T03:38:03.331567"
+  "timestamp": "2026-06-10T10:08:26.864632+00:00"
 }

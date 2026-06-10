@@ -22,7 +22,7 @@ export default function TypingText({
 
     const container: Variants = {
         hidden: { opacity: 0 },
-        visible: (i: number = 1) => ({
+        visible: () => ({
             opacity: 1,
             transition: {
                 staggerChildren: stagger,

@@ -1,27 +1,27 @@
 [
   {
     "cluster_id": 0,
-    "final_pressure": -0.06,
-    "direction": "neutral"
+    "final_pressure": -1.9,
+    "direction": "down"
   },
   {
     "cluster_id": 1,
-    "final_pressure": 0.03,
-    "direction": "up"
+    "final_pressure": -1.4,
+    "direction": "down"
   },
   {
     "cluster_id": 2,
-    "final_pressure": -0.22,
+    "final_pressure": 1.0,
     "direction": "up"
   },
   {
     "cluster_id": 3,
-    "final_pressure": -0.27,
-    "direction": "neutral"
+    "final_pressure": 0.6,
+    "direction": "up"
   },
   {
     "cluster_id": 4,
-    "final_pressure": 0.16,
+    "final_pressure": 1.1,
     "direction": "up"
   }
 ]

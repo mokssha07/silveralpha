@@ -4,7 +4,7 @@ from pathlib import Path
 snap = Path("data/snapshots")
 
 mem = json.load(open(snap / "prediction_memory.json"))
-latest = mem[-1]
+latest = mem[-1] if mem else {"predicted_proba": 0.5}
 
 trust = 0.5
 if (snap / "regime_trust.json").exists():

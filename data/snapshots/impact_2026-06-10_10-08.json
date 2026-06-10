@@ -1,0 +1,62 @@
+[
+  {
+    "cluster_id": 3,
+    "size": 5,
+    "stability": 0.504,
+    "impact_score": -0.058,
+    "direction": "down",
+    "sentiment": -0.115,
+    "sentiment_confidence": 0.92,
+    "sentiment_volatility": 0.451
+  },
+  {
+    "cluster_id": 4,
+    "size": 9,
+    "stability": 0.409,
+    "impact_score": 0.072,
+    "direction": "up",
+    "sentiment": 0.105,
+    "sentiment_confidence": 0.92,
+    "sentiment_volatility": 0.248
+  },
+  {
+    "cluster_id": 2,
+    "size": 12,
+    "stability": 0.448,
+    "impact_score": -0.036,
+    "direction": "down",
+    "sentiment": -0.05,
+    "sentiment_confidence": 0.92,
+    "sentiment_volatility": 0.219
+  },
+  {
+    "cluster_id": 5,
+    "size": 4,
+    "stability": 0.563,
+    "impact_score": 0.017,
+    "direction": "up",
+    "sentiment": 0.031,
+    "sentiment_confidence": 0.8,
+    "sentiment_volatility": 0.317
+  },
+  {
+    "cluster_id": 0,
+    "size": 19,
+    "stability": 0.392,
+    "impact_score": 0.346,
+    "direction": "up",
+    "sentiment": 0.522,
+    "sentiment_confidence": 0.8,
+    "sentiment_volatility": 0.17
+  },
+  {
+    "cluster_id": 1,
+    "size": 3,
+    "stability": 0.706,
+    "impact_score": -0.019,
+    "direction": "down",
+    "sentiment": -0.025,
+    "sentiment_confidence": 0.8,
+    "sentiment_volatility": 0.049
+  }
+]

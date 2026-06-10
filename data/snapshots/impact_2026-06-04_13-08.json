@@ -1,0 +1,42 @@
+[
+  {
+    "cluster_id": 2,
+    "size": 9,
+    "stability": 0.412,
+    "impact_score": -0.035,
+    "direction": "down",
+    "sentiment": -0.049,
+    "sentiment_confidence": 0.92,
+    "sentiment_volatility": 0.22
+  },
+  {
+    "cluster_id": 3,
+    "size": 10,
+    "stability": 0.381,
+    "impact_score": -0.078,
+    "direction": "down",
+    "sentiment": -0.124,
+    "sentiment_confidence": 0.92,
+    "sentiment_volatility": 0.316
+  },
+  {
+    "cluster_id": 1,
+    "size": 3,
+    "stability": 0.783,
+    "impact_score": 0.102,
+    "direction": "up",
+    "sentiment": 0.162,
+    "sentiment_confidence": 0.92,
+    "sentiment_volatility": 0.313
+  },
+  {
+    "cluster_id": 0,
+    "size": 18,
+    "stability": 0.412,
+    "impact_score": 0.338,
+    "direction": "up",
+    "sentiment": 0.51,
+    "sentiment_confidence": 0.8,
+    "sentiment_volatility": 0.172
+  }
+]

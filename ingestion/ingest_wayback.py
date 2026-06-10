@@ -1,7 +1,7 @@
 import requests
 import json
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 import feedparser
 import time
 
@@ -31,9 +31,11 @@ def fetch_historical_news(date_str):
     wayback_date = datetime.strptime(date_str, '%Y-%m-%d').strftime('%Y%m%d')
     
     rss_feeds = {
-        "Kitco": "https://www.kitco.com/rss/",
+        "Kitco": "https://www.kitco.com/rss/news",
         "Mining.com": "https://www.mining.com/feed/",
-        "Reuters": "https://www.reuters.com/rssFeed/businessNews",
+        "Reuters Commodities": "https://www.reuters.com/markets/commodities/rss",
+        "Reuters Metals": "https://www.reuters.com/markets/metals/rss",
+        "Federal Reserve": "https://www.federalreserve.gov/feeds/press_all.xml",
     }
     
     all_articles = []
@@ -43,12 +45,13 @@ def fetch_historical_news(date_str):
         entries = get_wayback_snapshot(url, wayback_date)
         
         for entry in entries[:20]:
+            published = entry.get("published") or entry.get("updated") or date_str
             article = {
                 'title': entry.get('title', ''),
-                'description': entry.get('summary', ''),
+                'summary': entry.get('summary', ''),
                 'url': entry.get('link', ''),
                 'source': source,
-                'date': date_str
+                'published': published
             }
             all_articles.append(article)
         
@@ -70,16 +73,9 @@ if __name__ == "__main__":
     out_dir = Path("data/raw")
     out_dir.mkdir(parents=True, exist_ok=True)
     
-    all_content = []
-    for article in articles:
-        all_content.append({
-            'text': f"{article['title']} {article['description']}",
-            'source': article['source'],
-            'date': article['date']
-        })
+    timestamp = datetime.strptime(date_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+    out_file = out_dir / f"rss_snapshot_{timestamp.strftime('%Y-%m-%d_%H-%M')}.json"
+    with open(out_file, 'w', encoding="utf-8") as f:
+        json.dump(articles, f, indent=2, ensure_ascii=False)
     
-    out_file = out_dir / "articles.json"
-    with open(out_file, 'w') as f:
-        json.dump(all_content, f, indent=2)
-    
-    print(f"Saved {len(all_content)} articles")
+    print(f"Saved {len(articles)} articles to {out_file}")

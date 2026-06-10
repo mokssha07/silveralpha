@@ -3,7 +3,10 @@ from pathlib import Path
 
 snap = Path("data/snapshots")
 
-pressure_files = sorted(snap.glob("final_pressure_*.json"))
+pressure_files = sorted(
+    [path for path in snap.glob("final_pressure_*.json") if not path.stem.endswith("_latest")] or list(snap.glob("final_pressure_*.json")),
+    key=lambda path: path.stat().st_mtime
+)
 out_path = snap / "narrative_conflict.json"
 
 if not pressure_files:
@@ -17,8 +20,8 @@ if not pressure_files:
 
 pressure = json.load(open(pressure_files[-1]))
 
-bullish = sum(1 for c in pressure if c.get("direction") == "Bullish")
-bearish = sum(1 for c in pressure if c.get("direction") == "Bearish")
+bullish = sum(1 for c in pressure if c.get("direction") in ("Bullish", "up") or c.get("final_pressure", 0) > 0)
+bearish = sum(1 for c in pressure if c.get("direction") in ("Bearish", "down") or c.get("final_pressure", 0) < 0)
 
 conflict = bullish > 0 and bearish > 0
 

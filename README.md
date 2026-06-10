@@ -161,7 +161,7 @@ pip install -r requirements.txt
 2. Run the ML Pipeline
 
 ```bash
-python run_pipeline.py
+venv/bin/python run_pipeline.py
 ```
 
 This:
@@ -193,6 +193,46 @@ npm run dev
 UI available at:
 ```
 http://localhost:3000
+```
+
+---
+
+Historical Training
+
+The predictor can now train from historical narrative snapshots joined to
+forward silver futures returns.
+
+Fetch 10 years of daily silver prices:
+
+```bash
+venv/bin/python data/prices/fetch_silver_prices.py \
+  --start 2016-05-01 \
+  --end 2026-05-01 \
+  --horizons 1,5,10,20
+```
+
+Build labels and train using existing snapshots:
+
+```bash
+venv/bin/python train_historical_backfill.py --years 10 --skip-news --skip-prices
+```
+
+Backfill historical news snapshots across the full window, then train:
+
+```bash
+venv/bin/python train_historical_backfill.py \
+  --years 10 \
+  --step-days 7 \
+  --skip-existing
+```
+
+Outputs:
+
+```
+data/prices/silver_daily.json
+data/snapshots/training_dataset.json
+data/snapshots/predictor_model.pkl
+data/snapshots/predictor_metrics.json
 ```
 
 ---
@@ -242,6 +282,5 @@ What's Next
 - Multi-asset expansion
 - Real-time streaming (WebSockets)
 - Deeper NLP intensity scoring
-
 
 

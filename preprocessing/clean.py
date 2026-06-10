@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 from ftfy import fix_text
 from cleantext import clean
+from analysis.geo import extract_locations
 
 raw_dir = Path("data/raw")
 out_dir = Path("data/snapshots")
@@ -31,7 +32,10 @@ def process_file(path):
     cleaned = []
 
     for d in data:
-        text = f"{d.get('title', '')} {d.get('summary', '')}"
+        if "text" in d and not d.get("title"):
+            text = d.get("text", "")
+        else:
+            text = f"{d.get('title', '')} {d.get('summary', d.get('description', ''))}"
         text = clean_text(text)
 
         if len(text) < 50:
@@ -40,7 +44,9 @@ def process_file(path):
         cleaned.append({
             "source": d.get("source"),
             "text": text,
-            "published": d.get("published")
+            "published": d.get("published", d.get("date")),
+            "url": d.get("url", d.get("link")),
+            "locations": extract_locations(text),
         })
 
     return cleaned
@@ -51,12 +57,16 @@ if __name__ == "__main__":
 
     if not files:
         print("No raw snapshots found")
-        exit()
+        raise SystemExit(1)
 
-    latest = files[-1]
+    latest = max(files, key=lambda path: path.stat().st_mtime)
     cleaned_docs = process_file(latest)
 
-    out_file = out_dir / latest.name.replace("rss_snapshot_", "clean_snapshot_")
+    if "snapshot_" in latest.name:
+        suffix = latest.name.split("snapshot_", 1)[1]
+        out_file = out_dir / f"clean_snapshot_{suffix}"
+    else:
+        out_file = out_dir / f"clean_snapshot_{latest.stem}.json"
 
     with open(out_file, "w", encoding="utf-8") as f:
         json.dump(cleaned_docs, f, indent=2, ensure_ascii=False)

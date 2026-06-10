@@ -1,4 +1,5 @@
 {
-  "conflict": false,
-  "reason": "no_pressure_data"
+  "conflict": true,
+  "bullish_count": 4,
+  "bearish_count": 3
 }

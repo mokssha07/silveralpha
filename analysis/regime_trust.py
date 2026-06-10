@@ -4,8 +4,8 @@ from pathlib import Path
 snap = Path("data/snapshots")
 
 state_files = (
-    sorted(snap.glob("regime_state.json")) or
-    sorted(snap.glob("regime.json"))
+    sorted(snap.glob("regime_state.json"), key=lambda path: path.stat().st_mtime) or
+    sorted(snap.glob("regime.json"), key=lambda path: path.stat().st_mtime)
 )
 
 out_path = snap / "regime_trust.json"

@@ -1,0 +1,44 @@
+[
+  {
+    "cluster_id": 3,
+    "velocity": -2,
+    "size": 5,
+    "stability": 0.504,
+    "impact_score": -0.058
+  },
+  {
+    "cluster_id": 4,
+    "velocity": -1,
+    "size": 9,
+    "stability": 0.409,
+    "impact_score": 0.072
+  },
+  {
+    "cluster_id": 2,
+    "velocity": 5,
+    "size": 12,
+    "stability": 0.448,
+    "impact_score": -0.036
+  },
+  {
+    "cluster_id": 5,
+    "velocity": 1,
+    "size": 4,
+    "stability": 0.563,
+    "impact_score": 0.017
+  },
+  {
+    "cluster_id": 0,
+    "velocity": 1,
+    "size": 19,
+    "stability": 0.392,
+    "impact_score": 0.346
+  },
+  {
+    "cluster_id": 1,
+    "velocity": 0,
+    "size": 3,
+    "stability": 0.706,
+    "impact_score": -0.019
+  }
+]

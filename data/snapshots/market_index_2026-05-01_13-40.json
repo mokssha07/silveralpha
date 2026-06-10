@@ -1,0 +1,41 @@
+{
+  "market_pressure_index": 0.0,
+  "clusters": [
+    {
+      "cluster_id": 3,
+      "final_pressure": 0.0,
+      "pressure": 0.0,
+      "direction": "neutral"
+    },
+    {
+      "cluster_id": 2,
+      "final_pressure": 0.0,
+      "pressure": 0.0,
+      "direction": "neutral"
+    },
+    {
+      "cluster_id": 1,
+      "final_pressure": 0.0,
+      "pressure": 0.0,
+      "direction": "neutral"
+    },
+    {
+      "cluster_id": 0,
+      "final_pressure": 0.0,
+      "pressure": 0.0,
+      "direction": "neutral"
+    },
+    {
+      "cluster_id": 4,
+      "final_pressure": -0.0,
+      "pressure": -0.0,
+      "direction": "neutral"
+    },
+    {
+      "cluster_id": 5,
+      "final_pressure": -0.0,
+      "pressure": -0.0,
+      "direction": "neutral"
+    }
+  ]
+}

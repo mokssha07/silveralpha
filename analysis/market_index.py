@@ -8,7 +8,10 @@ def latest(pattern):
     if not files:
         print(f"No {pattern} found")
         exit()
-    return files[-1]
+    timestamped = [path for path in files if not path.stem.endswith("_latest")]
+    if timestamped:
+        files = timestamped
+    return max(files, key=lambda path: path.stat().st_mtime)
 
 if __name__ == "__main__":
     pressure_path = latest("final_pressure_*.json")
@@ -26,6 +29,7 @@ if __name__ == "__main__":
     for c in clusters:
         clusters_out.append({
             "cluster_id": c["cluster_id"],
+            "final_pressure": c["final_pressure"],
             "pressure": c["final_pressure"],
             "direction": c["direction"]
         })

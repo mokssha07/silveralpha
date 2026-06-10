@@ -15,7 +15,7 @@ def load_latest_snapshot():
     files = sorted(snap_dir.glob("clean_snapshot_*.json"))
     if not files:
         print("No cleaned snapshots found")
-        exit()
+        raise SystemExit(1)
     return files[-1]
 
 
@@ -26,6 +26,9 @@ if __name__ == "__main__":
         docs = json.load(f)
 
     texts = [d["text"] for d in docs]
+    if not texts:
+        print("No cleaned documents to embed")
+        raise SystemExit(1)
 
     embeddings = model.encode(texts, show_progress_bar=True)
 

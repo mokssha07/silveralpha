@@ -15,7 +15,7 @@ if not feature_files:
     exit()
 
 features = json.load(open(feature_files[-1]))
-mpi = features.get("market_pressure_index", 0.0)
+mpi = abs(features.get("market_pressure_index", 0.0))
 n = features.get("num_narratives", 0)
 
 if mpi > 0.3 and n >= 2:

@@ -1,0 +1,44 @@
+[
+  {
+    "cluster_id": 3,
+    "size": 4,
+    "stability": 2.50600004196167,
+    "impact_score": 0.175,
+    "direction": "up"
+  },
+  {
+    "cluster_id": 2,
+    "size": 4,
+    "stability": 3.9149999618530273,
+    "impact_score": 0.0,
+    "direction": "neutral"
+  },
+  {
+    "cluster_id": 1,
+    "size": 4,
+    "stability": 3.5339999198913574,
+    "impact_score": 0.441,
+    "direction": "up"
+  },
+  {
+    "cluster_id": 0,
+    "size": 5,
+    "stability": 4.502999782562256,
+    "impact_score": 0.082,
+    "direction": "up"
+  },
+  {
+    "cluster_id": 4,
+    "size": 8,
+    "stability": 2.128999948501587,
+    "impact_score": -0.127,
+    "direction": "down"
+  },
+  {
+    "cluster_id": 5,
+    "size": 5,
+    "stability": 4.176000118255615,
+    "impact_score": -0.068,
+    "direction": "down"
+  }
+]

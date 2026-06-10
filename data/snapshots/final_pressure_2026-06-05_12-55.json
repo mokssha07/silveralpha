@@ -1,0 +1,37 @@
+[
+  {
+    "cluster_id": 3,
+    "final_pressure": -0.038,
+    "direction": "up",
+    "state": "momentum",
+    "temporal_factor": 1.2
+  },
+  {
+    "cluster_id": 0,
+    "final_pressure": -1.973,
+    "direction": "down",
+    "state": "fade",
+    "temporal_factor": 0.7
+  },
+  {
+    "cluster_id": 2,
+    "final_pressure": 1.002,
+    "direction": "down",
+    "state": "growth",
+    "temporal_factor": 1.0
+  },
+  {
+    "cluster_id": 1,
+    "final_pressure": 0.0,
+    "direction": "neutral",
+    "state": "fade",
+    "temporal_factor": 0.7
+  },
+  {
+    "cluster_id": 4,
+    "final_pressure": 0.159,
+    "direction": "down",
+    "state": "growth",
+    "temporal_factor": 1.0
+  }
+]

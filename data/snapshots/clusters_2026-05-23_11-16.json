@@ -1,0 +1,962 @@
+[
+  {
+    "cluster_id": 1,
+    "size": 20,
+    "stability": 0.286,
+    "source_count": 2,
+    "sources": [
+      "Financial Times Commodities",
+      "Mining.com"
+    ],
+    "locations": [
+      {
+        "name": "Beijing",
+        "region": "China",
+        "lat": 39.9042,
+        "lon": 116.4074,
+        "mentions": 6,
+        "evidence": [
+          "china",
+          "chinese"
+        ]
+      },
+      {
+        "name": "Santiago",
+        "region": "Chile",
+        "lat": -33.4489,
+        "lon": -70.6693,
+        "mentions": 2,
+        "evidence": [
+          "chile"
+        ]
+      },
+      {
+        "name": "Sydney",
+        "region": "Australia",
+        "lat": -33.8688,
+        "lon": 151.2093,
+        "mentions": 2,
+        "evidence": [
+          "australia",
+          "australian"
+        ]
+      },
+      {
+        "name": "Toronto",
+        "region": "Canada",
+        "lat": 43.6532,
+        "lon": -79.3832,
+        "mentions": 2,
+        "evidence": [
+          "canada"
+        ]
+      },
+      {
+        "name": "Brussels",
+        "region": "European Union",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "mentions": 2,
+        "evidence": [
+          "brussels",
+          "eu"
+        ]
+      },
+      {
+        "name": "Lima",
+        "region": "Peru",
+        "lat": -12.0464,
+        "lon": -77.0428,
+        "mentions": 1,
+        "evidence": [
+          "peru"
+        ]
+      },
+      {
+        "name": "Ottawa",
+        "region": "Canada",
+        "lat": 45.4215,
+        "lon": -75.6972,
+        "mentions": 1,
+        "evidence": [
+          "ottawa"
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "source": "Mining.com",
+        "text": "collahuasi permit setback jolts chile copper sector anglo american and glencore face renewed delays as chile reopens review of a major desalination project at the copper mine.",
+        "published": "2026-05-22T15:36:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Santiago",
+            "region": "Chile",
+            "lat": -33.4489,
+            "lon": -70.6693,
+            "mentions": 2,
+            "evidence": [
+              "chile"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Mining.com",
+        "text": "americas gold stock swap ends sprott silver stream burden it will issue 7.96 million common shares to sprott mining at a price of $5.57 apiece to cancel the remaining obligation to ship 592,000 oz. silver.",
+        "published": "2026-05-22T15:16:49+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Mining.com",
+        "text": "bhp urged to assess rare earths at olympic dam south australia wants bhp to examine whether olympic dam's rare earths can become a new source of critical minerals supply.",
+        "published": "2026-05-22T11:19:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Sydney",
+            "region": "Australia",
+            "lat": -33.8688,
+            "lon": 151.2093,
+            "mentions": 1,
+            "evidence": [
+              "australia"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Mining.com",
+        "text": "perpetua resources gets $2.9b exim loan for stibnite gold-antimony project in idaho last year, the company began early works construction at the project, which was fast-tracked by the trump administration.",
+        "published": "2026-05-21T23:55:32+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Mining.com",
+        "text": "chart: copper price surge mints 23 new unicorn mines the ranks of copper mining's answer to silicon valley's $1 billion startup unicorns swell to 75.",
+        "published": "2026-05-21T19:32:47+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Mining.com",
+        "text": "greenland mines buys rare earth project from neo performance for $35m neo performance will receive offtake rights on up to 60% of future ore or mineral concentrate production from the sarfartoq project.",
+        "published": "2026-05-21T15:24:36+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Mining.com",
+        "text": "usa rare earth wins up to $19.3m in doe backing federal support strengthens usa rare earth's push to build a western rare earth supply chain outside china.",
+        "published": "2026-05-21T13:33:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Beijing",
+            "region": "China",
+            "lat": 39.9042,
+            "lon": 116.4074,
+            "mentions": 1,
+            "evidence": [
+              "china"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Mining.com",
+        "text": "southern copper plans $319m cuajone mine overhaul peru mine upgrades aim to cut costs, sustain output and improve efficiency as ore grades decline at key sites.",
+        "published": "2026-05-21T11:54:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Lima",
+            "region": "Peru",
+            "lat": -12.0464,
+            "lon": -77.0428,
+            "mentions": 1,
+            "evidence": [
+              "peru"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Mining.com",
+        "text": "canada nickel, georedox launch first-of-its-kind hydrogen initiative at crawford the project will test georedox's proprietary technology for producing zero-carbon hydrogen from ultramafic rock formations.",
+        "published": "2026-05-20T23:26:15+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Toronto",
+            "region": "Canada",
+            "lat": 43.6532,
+            "lon": -79.3832,
+            "mentions": 1,
+            "evidence": [
+              "canada"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Mining.com",
+        "text": "agnico doubles wallbridge mining stake to over 19% the investment is part of a c$56 million private placement of wallbridge shares.",
+        "published": "2026-05-20T19:48:06+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Mining.com",
+        "text": "troilus gold assays underscore m&a potential, analysts say highlight assays at the west rim zone include 19 metres grading 2.69 grams gold per tonne, 3.24 grams silver and 0.03% copper.",
+        "published": "2026-05-20T15:28:35+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Mining.com",
+        "text": "china sets new mining controls, to fast-track strategic reserve buildout stricter rules including security reviews on foreign investments in the chinese mining sector are set to take effect on june 15.",
+        "published": "2026-05-20T15:17:40+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Beijing",
+            "region": "China",
+            "lat": 39.9042,
+            "lon": 116.4074,
+            "mentions": 2,
+            "evidence": [
+              "china",
+              "chinese"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Mining.com",
+        "text": "core lithium restarts finniss mine on price rebound recovering spodumene prices are prompting australian lithium producers to revive suspended mines and expansion plans.",
+        "published": "2026-05-20T11:58:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Sydney",
+            "region": "Australia",
+            "lat": -33.8688,
+            "lon": 151.2093,
+            "mentions": 1,
+            "evidence": [
+              "australian"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Mining.com",
+        "text": "eu targets tungsten, rare earths stockpile to counter china's grip brussels is focusing on strategic reserves and industrial policy due to export curbs revealing vulnerabilities in critical mineral supply.",
+        "published": "2026-05-20T10:55:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Brussels",
+            "region": "European Union",
+            "lat": 50.8503,
+            "lon": 4.3517,
+            "mentions": 2,
+            "evidence": [
+              "brussels",
+              "eu"
+            ]
+          },
+          {
+            "name": "Beijing",
+            "region": "China",
+            "lat": 39.9042,
+            "lon": 116.4074,
+            "mentions": 1,
+            "evidence": [
+              "china"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Mining.com",
+        "text": "graphite one secures site for alaska-ohio supply chain the ohio plant is expected to follow a staged build-out, scaling in 25,000-tonne steps to reach an annual output of 100,000 tonnes of anode material.",
+        "published": "2026-05-19T23:33:40+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Mining.com",
+        "text": "jeff currie sees gold price pullback before $10,000 run the former head of commodity research at goldman sachs revealed that he has been \"short gold\" since march.",
+        "published": "2026-05-19T17:02:01+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Mining.com",
+        "text": "carney fast-tracks $1.5b nouveau monde graphite mine — canada's answer to china's 80% supply control ottawa backs the quebec-based project, billed as the biggest graphite mine in the g7.",
+        "published": "2026-05-19T16:52:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Beijing",
+            "region": "China",
+            "lat": 39.9042,
+            "lon": 116.4074,
+            "mentions": 1,
+            "evidence": [
+              "china"
+            ]
+          },
+          {
+            "name": "Toronto",
+            "region": "Canada",
+            "lat": 43.6532,
+            "lon": -79.3832,
+            "mentions": 1,
+            "evidence": [
+              "canada"
+            ]
+          },
+          {
+            "name": "Ottawa",
+            "region": "Canada",
+            "lat": 45.4215,
+            "lon": -75.6972,
+            "mentions": 1,
+            "evidence": [
+              "ottawa"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Mining.com",
+        "text": "agnico greenlights $2.4b hope bay mine in nunavut hope bay is expected to produce between 400,000 and 435,000 oz. gold annually over an initial 11-year mine life.",
+        "published": "2026-05-19T14:55:32+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Mining.com",
+        "text": "op-ed: recovering more metal from leach pads is mining's quickest win faster gains in mining output may come from improving recovery on existing leach pads rather than building new supply.",
+        "published": "2026-05-19T09:00:00+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "defence groups clamour to delay us ban on chinese rare earth magnets military contractors want more time to comply with prohibition years in the making and now just months away",
+        "published": "2026-05-18T04:00:13+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Beijing",
+            "region": "China",
+            "lat": 39.9042,
+            "lon": 116.4074,
+            "mentions": 1,
+            "evidence": [
+              "chinese"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "size": 17,
+    "stability": 0.385,
+    "source_count": 2,
+    "sources": [
+      "Financial Times Commodities",
+      "Mining.com"
+    ],
+    "locations": [
+      {
+        "name": "Beijing",
+        "region": "China",
+        "lat": 39.9042,
+        "lon": 116.4074,
+        "mentions": 4,
+        "evidence": [
+          "china",
+          "chinese"
+        ]
+      },
+      {
+        "name": "Moscow",
+        "region": "Russia",
+        "lat": 55.7558,
+        "lon": 37.6173,
+        "mentions": 2,
+        "evidence": [
+          "russian"
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "source": "Mining.com",
+        "text": "how to dodge the iran war acid shortage: one miner bought its own plant marimaca has signed a six-month non-binding memorandum with a large acid producer in the port city of mejillones.",
+        "published": "2026-05-21T09:18:00+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "france says countries wary of tapping more oil reserves g7 finance ministers did not discuss second emergency release to calm energy crisis, says roland lescure",
+        "published": "2026-05-22T04:00:32+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "the fragile maths of uncle sam's energy self-sufficiency us may produce more oil than it consumes but banning exports would be extremely complicated",
+        "published": "2026-05-22T04:00:21+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "is gas making a comeback on the us power grid? surging energy demand causes grid operators to prioritise fossil fuels",
+        "published": "2026-05-21T11:00:05+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "how not to manage a global oil crisis despite urgent warnings, governments have failed to take the current energy shock seriously enough",
+        "published": "2026-05-21T10:00:07+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "iran war opens 'golden window' for china's renminbi analysts say use of chinese currency in global oil trade is on the rise",
+        "published": "2026-05-21T04:00:09+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Beijing",
+            "region": "China",
+            "lat": 39.9042,
+            "lon": 116.4074,
+            "mentions": 2,
+            "evidence": [
+              "china",
+              "chinese"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "oil drops nearly 6% as two china-bound supertankers cross strait of hormuz brent crude falls to about $105 a barrel as asia-bound vessels raise hopes of resumption of energy flows",
+        "published": "2026-05-20T19:17:35+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Beijing",
+            "region": "China",
+            "lat": 39.9042,
+            "lon": 116.4074,
+            "mentions": 1,
+            "evidence": [
+              "china"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "uk eases sanctions on russian oil refined into jet fuel and diesel government aims to alleviate supply problems caused by iran war and echoes similar measures in us",
+        "published": "2026-05-20T12:02:53+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Moscow",
+            "region": "Russia",
+            "lat": 55.7558,
+            "lon": 37.6173,
+            "mentions": 1,
+            "evidence": [
+              "russian"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "the oil shock is coming for america tools that worked to lower prices in the last crisis have already been spent",
+        "published": "2026-05-20T12:00:04+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "commodities powerhouse indonesia to tighten export controls jakarta to set up state-owned enterprise that would be sole exporter of palm oil, thermal coal and nickel",
+        "published": "2026-05-20T11:45:33+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "indonesia is at a perpendicular intersection of two different roads is this the worst ageing fuel subsidy in the world?",
+        "published": "2026-05-20T09:21:38+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "the energy crisis may just be starting oil futures markets are sanguine, but history shows expectations have often been disappointed",
+        "published": "2026-05-20T04:00:33+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "iran stockpiles oil on ageing tankers anchored in the gulf tehran turns to floating storage to keep country's production going",
+        "published": "2026-05-19T04:00:21+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "why this chinese company says the world needs more lithium tianqi says demand forecasts underestimate rapid rise of battery-powered industrial equipment",
+        "published": "2026-05-19T00:37:57+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Beijing",
+            "region": "China",
+            "lat": 39.9042,
+            "lon": 116.4074,
+            "mentions": 1,
+            "evidence": [
+              "chinese"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "us eases russian oil sanctions in bid to contain iran price surge renewal of 30-day licence comes as high fuel costs hit american consumers",
+        "published": "2026-05-18T18:13:08+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Moscow",
+            "region": "Russia",
+            "lat": 55.7558,
+            "lon": 37.6173,
+            "mentions": 1,
+            "evidence": [
+              "russian"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "european oil refiners and airlines have 'almost zero' jet fuel shortage concerns refiners maximise production and increase imports from us and africa to offset loss of middle eastern supplies",
+        "published": "2026-05-18T10:04:12+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "iran war hits americans with $40bn fuel bill extra spending on petrol and diesel exceeds cost of repairing country's bridges or rebooting air traffic control",
+        "published": "2026-05-18T04:00:13+00:00",
+        "url": null,
+        "locations": []
+      }
+    ]
+  },
+  {
+    "cluster_id": 0,
+    "size": 20,
+    "stability": 0.401,
+    "source_count": 1,
+    "sources": [
+      "Federal Reserve"
+    ],
+    "locations": [
+      {
+        "name": "Washington, DC",
+        "region": "United States",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "mentions": 36,
+        "evidence": [
+          "federal reserve",
+          "fomc"
+        ]
+      },
+      {
+        "name": "New York",
+        "region": "United States",
+        "lat": 40.7128,
+        "lon": -74.006,
+        "mentions": 2,
+        "evidence": [
+          "new york"
+        ]
+      },
+      {
+        "name": "Lima",
+        "region": "Peru",
+        "lat": -12.0464,
+        "lon": -77.0428,
+        "mentions": 2,
+        "evidence": [
+          "peru"
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "source": "Federal Reserve",
+        "text": "kevin warsh takes oath of office as chairman and a member of the board of governors of the federal reserve system, and the federal open market committee unanimously selects warsh as its chairman kevin warsh takes oath of office as chairman and a member of the board of governors of the federal reserve system, and the federal open market committee unanimously selects warsh as its chairman",
+        "published": "2026-05-22T20:15:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations",
+        "published": "2026-05-22T20:00:00+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board issues enforcement action with former employee of commerce bank federal reserve board issues enforcement action with former employee of commerce bank",
+        "published": "2026-05-21T15:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board requests public comment on a proposal to establish a \"payment account,\" which legally eligible financial institutions could use for the specific purpose of clearing and settling their payments federal reserve board requests public comment on a proposal to establish a \"payment account,\" which legally eligible financial institutions could use for the specific purpose of clearing and settling their payments",
+        "published": "2026-05-20T20:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "minutes of the federal open market committee, april 28-29, 2026 minutes of the federal open market committee, april 28-29, 2026",
+        "published": "2026-05-20T18:00:00+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board names jerome h. powell as chair pro tempore; powell will serve as chair pro tempore until kevin m. warsh is sworn in as the new chair federal reserve board names jerome h. powell as chair pro tempore; powell will serve as chair pro tempore until kevin m. warsh is sworn in as the new chair",
+        "published": "2026-05-15T21:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board announces approval of application by the stephen m. calk 2025 trust federal reserve board announces approval of application by the stephen m. calk 2025 trust",
+        "published": "2026-05-15T20:30:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board announces it does not object to the conversion of united texas bank, of dallas, texas, from a bank supervised by the federal reserve to a national bank supervised by the office of the comptroller of the currency federal reserve board announces it does not object to the conversion of united texas bank, of dallas, texas, from a bank supervised by the federal reserve to a national bank supervised by the office of the comptroller of the currency",
+        "published": "2026-05-15T20:30:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 4,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board announces termination of enforcement actions with ubs group ag, credit suisse ag, credit suisse holdings (usa), inc., and credit suisse ag, new york branch federal reserve board announces termination of enforcement actions with ubs group ag, credit suisse ag, credit suisse holdings (usa), inc., and credit suisse ag, new york branch",
+        "published": "2026-05-15T15:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          },
+          {
+            "name": "New York",
+            "region": "United States",
+            "lat": 40.7128,
+            "lon": -74.006,
+            "mentions": 2,
+            "evidence": [
+              "new york"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "stephen i. miran submits his resignation as a member of the federal reserve board, effective when or shortly before his successor on the board is sworn in stephen i. miran submits his resignation as a member of the federal reserve board, effective when or shortly before his successor on the board is sworn in",
+        "published": "2026-05-14T18:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board releases results from two surveys of senior financial officers at banks about their views on discount window operating days and their strategies and practices for managing reserve balances federal reserve board releases results from two surveys of senior financial officers at banks about their views on discount window operating days and their strategies and practices for managing reserve balances",
+        "published": "2026-05-14T14:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board issues economic well-being of u.s. households in 2025 report federal reserve board issues economic well-being of u.s. households in 2025 report",
+        "published": "2026-05-13T15:30:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board announces termination of enforcement actions with f & m holding company, inc. and thread bancorp, inc. federal reserve board announces termination of enforcement actions with f & m holding company, inc. and thread bancorp, inc.",
+        "published": "2026-05-12T15:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board announces approval of related applications by columbia bank mhc, and columbia financial, inc. federal reserve board announces approval of related applications by columbia bank mhc, and columbia financial, inc.",
+        "published": "2026-05-08T21:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "agencies issue host state loan-to-deposit ratios agencies issue host state loan-to-deposit ratios",
+        "published": "2026-05-01T15:00:00+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve issues fomc statement federal reserve issues fomc statement",
+        "published": "2026-04-29T18:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 4,
+            "evidence": [
+              "federal reserve",
+              "fomc"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board announces approval of application by oceanfirst financial corp. federal reserve board announces approval of application by oceanfirst financial corp.",
+        "published": "2026-04-24T20:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board announces approval of application by banco de credito del peru federal reserve board announces approval of application by banco de credito del peru",
+        "published": "2026-04-24T20:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          },
+          {
+            "name": "Lima",
+            "region": "Peru",
+            "lat": -12.0464,
+            "lon": -77.0428,
+            "mentions": 2,
+            "evidence": [
+              "peru"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "agencies finalize changes to enhance community bank leverage ratio agencies finalize changes to enhance community bank leverage ratio",
+        "published": "2026-04-23T19:30:00+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board issues enforcement action with former employee of first financial bank federal reserve board issues enforcement action with former employee of first financial bank",
+        "published": "2026-04-22T15:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

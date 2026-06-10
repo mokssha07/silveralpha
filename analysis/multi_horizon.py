@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 snap = Path("data/snapshots")
-velocity_files = sorted(snap.glob("velocity_*.json"))
+velocity_files = sorted(snap.glob("velocity_*.json"), key=lambda path: path.stat().st_mtime)
 out_path = snap / "multi_horizon.json"
 
 if not velocity_files:

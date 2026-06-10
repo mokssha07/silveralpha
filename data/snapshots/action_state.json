@@ -1,6 +1,6 @@
 {
-  "action": "WATCH",
-  "predicted_proba": 0.513,
-  "signal_trust": 0.4,
-  "conflict": false
+  "action": "IGNORE",
+  "predicted_proba": 0.642,
+  "signal_trust": 0.65,
+  "conflict": true
 }

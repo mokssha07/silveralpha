@@ -1,0 +1,647 @@
+[
+  {
+    "cluster_id": 3,
+    "size": 4,
+    "stability": 0.601,
+    "source_count": 1,
+    "sources": [
+      "Mining.com"
+    ],
+    "locations": [
+      {
+        "name": "Saskatchewan",
+        "region": "Canada",
+        "lat": 52.9399,
+        "lon": -106.4509,
+        "mentions": 1,
+        "evidence": [
+          "saskatchewan"
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "source": "Mining.com",
+        "text": "trident gold assays reveal ex-cameco site's promise in saskatchewan the contact lake gold mine produced about 190,000 oz. gold at an average grade of 6.16 grams from 1994 until 1998.",
+        "published": "2026-04-29T15:31:15+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Saskatchewan",
+            "region": "Canada",
+            "lat": 52.9399,
+            "lon": -106.4509,
+            "mentions": 1,
+            "evidence": [
+              "saskatchewan"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Mining.com",
+        "text": "gold price extends decline ahead of fed decision spot gold fell another 1.3% to approximately $4,510 an ounce, extending a 2% decline for the week.",
+        "published": "2026-04-29T15:18:16+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Mining.com",
+        "text": "gold price could see $8,000 on de-dollarization, deutsche bank projects bullion's share of global central bank reserves could realistically reach 40%, up from 30% currently, the bank predicts.",
+        "published": "2026-04-28T15:54:52+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Mining.com",
+        "text": "maple gold mines surges on quebec resource boost compared with the 2022 resource, the company has now added 394,000 indicated and 1.77 million inferred gold ounces.",
+        "published": "2026-04-27T17:32:45+00:00",
+        "url": null,
+        "locations": []
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "size": 4,
+    "stability": 0.745,
+    "source_count": 1,
+    "sources": [
+      "Federal Reserve"
+    ],
+    "locations": [
+      {
+        "name": "Washington, DC",
+        "region": "United States",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "mentions": 14,
+        "evidence": [
+          "federal reserve",
+          "fomc"
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve issues fomc statement federal reserve issues fomc statement",
+        "published": "2026-04-29T18:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 4,
+            "evidence": [
+              "federal reserve",
+              "fomc"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board releases annual audited financial statements federal reserve board releases annual audited financial statements",
+        "published": "2026-03-25T16:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve issues fomc statement federal reserve issues fomc statement",
+        "published": "2026-03-18T18:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 4,
+            "evidence": [
+              "federal reserve",
+              "fomc"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board and federal open market committee release economic projections from the march 17-18 fomc meeting federal reserve board and federal open market committee release economic projections from the march 17-18 fomc meeting",
+        "published": "2026-03-18T18:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 4,
+            "evidence": [
+              "federal reserve",
+              "fomc"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "cluster_id": 1,
+    "size": 4,
+    "stability": 0.717,
+    "source_count": 1,
+    "sources": [
+      "Federal Reserve"
+    ],
+    "locations": [
+      {
+        "name": "Washington, DC",
+        "region": "United States",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "mentions": 8,
+        "evidence": [
+          "federal reserve"
+        ]
+      },
+      {
+        "name": "Lima",
+        "region": "Peru",
+        "lat": -12.0464,
+        "lon": -77.0428,
+        "mentions": 2,
+        "evidence": [
+          "peru"
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board announces approval of application by oceanfirst financial corp. federal reserve board announces approval of application by oceanfirst financial corp.",
+        "published": "2026-04-24T20:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board announces approval of application by banco de credito del peru federal reserve board announces approval of application by banco de credito del peru",
+        "published": "2026-04-24T20:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          },
+          {
+            "name": "Lima",
+            "region": "Peru",
+            "lat": -12.0464,
+            "lon": -77.0428,
+            "mentions": 2,
+            "evidence": [
+              "peru"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board announces approval of application by burke & herbert financial services corp. federal reserve board announces approval of application by burke & herbert financial services corp.",
+        "published": "2026-04-10T20:15:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board announces approval of application by home bancshares federal reserve board announces approval of application by home bancshares",
+        "published": "2026-03-12T20:30:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "cluster_id": 0,
+    "size": 5,
+    "stability": 0.778,
+    "source_count": 1,
+    "sources": [
+      "Federal Reserve"
+    ],
+    "locations": [
+      {
+        "name": "Washington, DC",
+        "region": "United States",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "mentions": 10,
+        "evidence": [
+          "federal reserve"
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board issues enforcement action with former employee of first financial bank federal reserve board issues enforcement action with former employee of first financial bank",
+        "published": "2026-04-22T15:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board issues enforcement action with community bankshares, inc. federal reserve board issues enforcement action with community bankshares, inc.",
+        "published": "2026-04-16T15:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board issues enforcement action with former employee of united bank federal reserve board issues enforcement action with former employee of united bank",
+        "published": "2026-04-03T15:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board issues enforcement actions with former employee of ally bank and former employee of regions bank federal reserve board issues enforcement actions with former employee of ally bank and former employee of regions bank",
+        "published": "2026-03-20T15:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Federal Reserve",
+        "text": "federal reserve board issues enforcement actions with former employee of equity bank and former employee of first state bank of dongola federal reserve board issues enforcement actions with former employee of equity bank and former employee of first state bank of dongola",
+        "published": "2026-03-13T15:00:00+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Washington, DC",
+            "region": "United States",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "mentions": 2,
+            "evidence": [
+              "federal reserve"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "cluster_id": 4,
+    "size": 8,
+    "stability": 0.53,
+    "source_count": 1,
+    "sources": [
+      "Financial Times Commodities"
+    ],
+    "locations": [],
+    "documents": [
+      {
+        "source": "Financial Times Commodities",
+        "text": "exxon and chevron defy trump pressure to boost oil production us supermajors stick to prewar strategies despite white house plea for more drilling to curb soaring petrol prices",
+        "published": "2026-05-01T10:30:24+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "oil falls back after surging to $126 on supply fears brent crude hit new conflict high as blockade of strait of hormuz continues before dropping in wildly volatile trading",
+        "published": "2026-04-30T19:14:35+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "returns before rigs: why surging oil prices haven't sparked a permian boom us oil producers are in 'wait-and-see' mode as the iran war energy crisis plays out",
+        "published": "2026-04-30T11:00:05+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "shipbuilding feels pinch from war-driven paint and lubricant shortage supply bottlenecks mark the widening fallout from iran conflict and its disruption on middle east oil supplies",
+        "published": "2026-04-30T03:11:25+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "oil tops $120 as trump signals extended hormuz stand-off brent crude rises for eighth straight day as us president says he will keep naval blockade in place",
+        "published": "2026-04-29T19:44:35+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "total profits jump 29% as war drives oil price surge and trading gains french energy major forecasts extended period of high prices as it offsets production losses in the middle east",
+        "published": "2026-04-29T08:17:56+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "iran war oil price windfall gives shell a chance to edge ahead of bp extra funds mean majors can now in theory increase exploration without cutting shareholder returns",
+        "published": "2026-04-29T04:00:27+00:00",
+        "url": null,
+        "locations": []
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "oil price climbs above $110 for first time in three weeks brent crude rises after white house reiterates 'red lines' in negotiations with tehran",
+        "published": "2026-04-28T19:57:18+00:00",
+        "url": null,
+        "locations": []
+      }
+    ]
+  },
+  {
+    "cluster_id": 5,
+    "size": 5,
+    "stability": 0.761,
+    "source_count": 1,
+    "sources": [
+      "Financial Times Commodities"
+    ],
+    "locations": [
+      {
+        "name": "Riyadh",
+        "region": "Saudi Arabia",
+        "lat": 24.7136,
+        "lon": 46.6753,
+        "mentions": 8,
+        "evidence": [
+          "opec",
+          "saudi arabia"
+        ]
+      },
+      {
+        "name": "Dubai",
+        "region": "United Arab Emirates",
+        "lat": 25.2048,
+        "lon": 55.2708,
+        "mentions": 4,
+        "evidence": [
+          "uae"
+        ]
+      },
+      {
+        "name": "Moscow",
+        "region": "Russia",
+        "lat": 55.7558,
+        "lon": 37.6173,
+        "mentions": 2,
+        "evidence": [
+          "moscow",
+          "russia"
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "source": "Financial Times Commodities",
+        "text": "uaexit adds momentum to the opec doom loop the emirates' departure reflects the cartel's declining market share and the ongoing energy transition",
+        "published": "2026-04-30T04:00:17+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Riyadh",
+            "region": "Saudi Arabia",
+            "lat": 24.7136,
+            "lon": 46.6753,
+            "mentions": 1,
+            "evidence": [
+              "opec"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "the twilight of opec uae's departure leaves saudi arabia trying to hold together a fractious cartel",
+        "published": "2026-04-29T17:13:32+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Riyadh",
+            "region": "Saudi Arabia",
+            "lat": 24.7136,
+            "lon": 46.6753,
+            "mentions": 2,
+            "evidence": [
+              "opec",
+              "saudi arabia"
+            ]
+          },
+          {
+            "name": "Dubai",
+            "region": "United Arab Emirates",
+            "lat": 25.2048,
+            "lon": 55.2708,
+            "mentions": 1,
+            "evidence": [
+              "uae"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "uae's opec exit will drive down oil prices in future, warns moscow russia and kazakhstan confirm their intention to remain within opec+",
+        "published": "2026-04-29T13:08:02+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Moscow",
+            "region": "Russia",
+            "lat": 55.7558,
+            "lon": 37.6173,
+            "mentions": 2,
+            "evidence": [
+              "moscow",
+              "russia"
+            ]
+          },
+          {
+            "name": "Riyadh",
+            "region": "Saudi Arabia",
+            "lat": 24.7136,
+            "lon": 46.6753,
+            "mentions": 2,
+            "evidence": [
+              "opec"
+            ]
+          },
+          {
+            "name": "Dubai",
+            "region": "United Arab Emirates",
+            "lat": 25.2048,
+            "lon": 55.2708,
+            "mentions": 1,
+            "evidence": [
+              "uae"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "uae opens up an opec fissure exit represents a rejection of the production-control system dominated in recent years by saudi arabia",
+        "published": "2026-04-29T04:00:27+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Riyadh",
+            "region": "Saudi Arabia",
+            "lat": 24.7136,
+            "lon": 46.6753,
+            "mentions": 2,
+            "evidence": [
+              "opec",
+              "saudi arabia"
+            ]
+          },
+          {
+            "name": "Dubai",
+            "region": "United Arab Emirates",
+            "lat": 25.2048,
+            "lon": 55.2708,
+            "mentions": 1,
+            "evidence": [
+              "uae"
+            ]
+          }
+        ]
+      },
+      {
+        "source": "Financial Times Commodities",
+        "text": "can opec survive the uae's exit? abu dhabi's surprise decision to leave the oil cartel raises doubts over its future",
+        "published": "2026-04-29T04:00:27+00:00",
+        "url": null,
+        "locations": [
+          {
+            "name": "Riyadh",
+            "region": "Saudi Arabia",
+            "lat": 24.7136,
+            "lon": 46.6753,
+            "mentions": 1,
+            "evidence": [
+              "opec"
+            ]
+          },
+          {
+            "name": "Dubai",
+            "region": "United Arab Emirates",
+            "lat": 25.2048,
+            "lon": 55.2708,
+            "mentions": 1,
+            "evidence": [
+              "uae"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

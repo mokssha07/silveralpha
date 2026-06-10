@@ -5,6 +5,11 @@ import { useFrame } from '@react-three/fiber'
 import { Mesh, CanvasTexture, LinearFilter, MathUtils } from 'three'
 import { Float } from '@react-three/drei'
 
+function seededRandom(seed: number) {
+    const x = Math.sin(seed) * 10000
+    return x - Math.floor(x)
+}
+
 export default function Coin() {
     const meshRef = useRef<Mesh>(null)
     const smoothedScroll = useRef(0) // Persistent smoothed value
@@ -26,7 +31,7 @@ export default function Coin() {
         ctx.strokeStyle = 'rgba(255,255,255,0.06)'
         ctx.lineWidth = 2
         for (let i = 0; i < 1500; i++) {
-            const y = Math.random() * size
+            const y = seededRandom(i + 1) * size
             ctx.beginPath()
             ctx.moveTo(0, y)
             ctx.lineTo(size, y)
