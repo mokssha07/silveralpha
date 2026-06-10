@@ -5,6 +5,8 @@ from datetime import datetime, timezone
 import feedparser
 import time
 
+from ingestion import rss_feeds
+
 def get_wayback_snapshot(url, date_str):
     """
     Get historical RSS snapshot from Wayback Machine
@@ -29,15 +31,7 @@ def fetch_historical_news(date_str):
     date_str format: '2024-01-15'
     """
     wayback_date = datetime.strptime(date_str, '%Y-%m-%d').strftime('%Y%m%d')
-    
-    rss_feeds = {
-        "Kitco": "https://www.kitco.com/rss/news",
-        "Mining.com": "https://www.mining.com/feed/",
-        "Reuters Commodities": "https://www.reuters.com/markets/commodities/rss",
-        "Reuters Metals": "https://www.reuters.com/markets/metals/rss",
-        "Federal Reserve": "https://www.federalreserve.gov/feeds/press_all.xml",
-    }
-    
+
     all_articles = []
     
     for source, url in rss_feeds.items():
